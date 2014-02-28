@@ -8,14 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C7C83DB618BFE79E0033BC97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C83DB518BFE79E0033BC97 /* Foundation.framework */; };
-		C7C83DBB18BFE79E0033BC97 /* MarshmallowCore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7C83DBA18BFE79E0033BC97 /* MarshmallowCore.h */; };
-		C7C83DBD18BFE79E0033BC97 /* MarshmallowCore.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C83DBC18BFE79E0033BC97 /* MarshmallowCore.m */; };
 		C7C83DC418BFE79E0033BC97 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C83DC318BFE79E0033BC97 /* XCTest.framework */; };
 		C7C83DC518BFE79E0033BC97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C83DB518BFE79E0033BC97 /* Foundation.framework */; };
 		C7C83DC718BFE79E0033BC97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C83DC618BFE79E0033BC97 /* UIKit.framework */; };
 		C7C83DCA18BFE79E0033BC97 /* libMarshmallowCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C83DB218BFE79E0033BC97 /* libMarshmallowCore.a */; };
 		C7C83DD018BFE79E0033BC97 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7C83DCE18BFE79E0033BC97 /* InfoPlist.strings */; };
 		C7C83DD218BFE79E0033BC97 /* MarshmallowCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C83DD118BFE79E0033BC97 /* MarshmallowCoreTests.m */; };
+		C7CFBDF218C0585300598F45 /* NSMutableArray+Marshmallow.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDEF18C0585300598F45 /* NSMutableArray+Marshmallow.m */; };
+		C7CFBDF318C0585300598F45 /* NSMutableArray+Marshmallow.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDEF18C0585300598F45 /* NSMutableArray+Marshmallow.m */; };
+		C7CFBDF418C0585300598F45 /* NSString+Marshmallow.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDF118C0585300598F45 /* NSString+Marshmallow.m */; };
+		C7CFBDF518C0585300598F45 /* NSString+Marshmallow.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDF118C0585300598F45 /* NSString+Marshmallow.m */; };
+		C7CFBE0518C0586B00598F45 /* MMDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDFA18C0586B00598F45 /* MMDebug.m */; };
+		C7CFBE0618C0586B00598F45 /* MMDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDFA18C0586B00598F45 /* MMDebug.m */; };
+		C7CFBE0718C0586B00598F45 /* MMInit.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDFC18C0586B00598F45 /* MMInit.m */; };
+		C7CFBE0818C0586B00598F45 /* MMInit.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDFC18C0586B00598F45 /* MMInit.m */; };
+		C7CFBE0918C0586B00598F45 /* MMPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDFE18C0586B00598F45 /* MMPreferences.m */; };
+		C7CFBE0A18C0586B00598F45 /* MMPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDFE18C0586B00598F45 /* MMPreferences.m */; };
+		C7CFBE0B18C0586B00598F45 /* MMSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBE0018C0586B00598F45 /* MMSet.m */; };
+		C7CFBE0C18C0586B00598F45 /* MMSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBE0018C0586B00598F45 /* MMSet.m */; };
+		C7CFBE0D18C0586B00598F45 /* MMUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBE0218C0586B00598F45 /* MMUtility.m */; };
+		C7CFBE0E18C0586B00598F45 /* MMUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBE0218C0586B00598F45 /* MMUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +47,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				C7C83DBB18BFE79E0033BC97 /* MarshmallowCore.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,15 +55,28 @@
 /* Begin PBXFileReference section */
 		C7C83DB218BFE79E0033BC97 /* libMarshmallowCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMarshmallowCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C83DB518BFE79E0033BC97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C7C83DB918BFE79E0033BC97 /* MarshmallowCore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarshmallowCore-Prefix.pch"; sourceTree = "<group>"; };
-		C7C83DBA18BFE79E0033BC97 /* MarshmallowCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarshmallowCore.h; sourceTree = "<group>"; };
-		C7C83DBC18BFE79E0033BC97 /* MarshmallowCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarshmallowCore.m; sourceTree = "<group>"; };
 		C7C83DC218BFE79E0033BC97 /* MarshmallowCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarshmallowCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C83DC318BFE79E0033BC97 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C7C83DC618BFE79E0033BC97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C7C83DCD18BFE79E0033BC97 /* MarshmallowCoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MarshmallowCoreTests-Info.plist"; sourceTree = "<group>"; };
 		C7C83DCF18BFE79E0033BC97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7C83DD118BFE79E0033BC97 /* MarshmallowCoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarshmallowCoreTests.m; sourceTree = "<group>"; };
+		C7CFBDEE18C0585300598F45 /* NSMutableArray+Marshmallow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Marshmallow.h"; sourceTree = "<group>"; };
+		C7CFBDEF18C0585300598F45 /* NSMutableArray+Marshmallow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Marshmallow.m"; sourceTree = "<group>"; };
+		C7CFBDF018C0585300598F45 /* NSString+Marshmallow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Marshmallow.h"; sourceTree = "<group>"; };
+		C7CFBDF118C0585300598F45 /* NSString+Marshmallow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Marshmallow.m"; sourceTree = "<group>"; };
+		C7CFBDF718C0586B00598F45 /* MarshmallowCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarshmallowCore.h; sourceTree = "<group>"; };
+		C7CFBDF918C0586B00598F45 /* MMDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDebug.h; sourceTree = "<group>"; };
+		C7CFBDFA18C0586B00598F45 /* MMDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDebug.m; sourceTree = "<group>"; };
+		C7CFBDFB18C0586B00598F45 /* MMInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMInit.h; sourceTree = "<group>"; };
+		C7CFBDFC18C0586B00598F45 /* MMInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMInit.m; sourceTree = "<group>"; };
+		C7CFBDFD18C0586B00598F45 /* MMPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPreferences.h; sourceTree = "<group>"; };
+		C7CFBDFE18C0586B00598F45 /* MMPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPreferences.m; sourceTree = "<group>"; };
+		C7CFBDFF18C0586B00598F45 /* MMSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSet.h; sourceTree = "<group>"; };
+		C7CFBE0018C0586B00598F45 /* MMSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSet.m; sourceTree = "<group>"; };
+		C7CFBE0118C0586B00598F45 /* MMUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUtility.h; sourceTree = "<group>"; };
+		C7CFBE0218C0586B00598F45 /* MMUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUtility.m; sourceTree = "<group>"; };
+		C7CFBE1118C05E2800598F45 /* MarshmallowCore-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MarshmallowCore-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +134,18 @@
 		C7C83DB718BFE79E0033BC97 /* MarshmallowCore */ = {
 			isa = PBXGroup;
 			children = (
-				C7C83DBA18BFE79E0033BC97 /* MarshmallowCore.h */,
-				C7C83DBC18BFE79E0033BC97 /* MarshmallowCore.m */,
+				C7CFBDF718C0586B00598F45 /* MarshmallowCore.h */,
+				C7CFBDF918C0586B00598F45 /* MMDebug.h */,
+				C7CFBDFA18C0586B00598F45 /* MMDebug.m */,
+				C7CFBDFB18C0586B00598F45 /* MMInit.h */,
+				C7CFBDFC18C0586B00598F45 /* MMInit.m */,
+				C7CFBDFD18C0586B00598F45 /* MMPreferences.h */,
+				C7CFBDFE18C0586B00598F45 /* MMPreferences.m */,
+				C7CFBDFF18C0586B00598F45 /* MMSet.h */,
+				C7CFBE0018C0586B00598F45 /* MMSet.m */,
+				C7CFBE0118C0586B00598F45 /* MMUtility.h */,
+				C7CFBE0218C0586B00598F45 /* MMUtility.m */,
+				C7CFBDED18C0585300598F45 /* Categories */,
 				C7C83DB818BFE79E0033BC97 /* Supporting Files */,
 			);
 			path = MarshmallowCore;
@@ -120,7 +154,7 @@
 		C7C83DB818BFE79E0033BC97 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C7C83DB918BFE79E0033BC97 /* MarshmallowCore-Prefix.pch */,
+				C7CFBE1118C05E2800598F45 /* MarshmallowCore-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +175,17 @@
 				C7C83DCE18BFE79E0033BC97 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7CFBDED18C0585300598F45 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C7CFBDEE18C0585300598F45 /* NSMutableArray+Marshmallow.h */,
+				C7CFBDEF18C0585300598F45 /* NSMutableArray+Marshmallow.m */,
+				C7CFBDF018C0585300598F45 /* NSString+Marshmallow.h */,
+				C7CFBDF118C0585300598F45 /* NSString+Marshmallow.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +269,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7C83DBD18BFE79E0033BC97 /* MarshmallowCore.m in Sources */,
+				C7CFBE0B18C0586B00598F45 /* MMSet.m in Sources */,
+				C7CFBE0518C0586B00598F45 /* MMDebug.m in Sources */,
+				C7CFBE0D18C0586B00598F45 /* MMUtility.m in Sources */,
+				C7CFBE0918C0586B00598F45 /* MMPreferences.m in Sources */,
+				C7CFBE0718C0586B00598F45 /* MMInit.m in Sources */,
+				C7CFBDF418C0585300598F45 /* NSString+Marshmallow.m in Sources */,
+				C7CFBDF218C0585300598F45 /* NSMutableArray+Marshmallow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7CFBE0C18C0586B00598F45 /* MMSet.m in Sources */,
+				C7CFBE0618C0586B00598F45 /* MMDebug.m in Sources */,
+				C7CFBE0E18C0586B00598F45 /* MMUtility.m in Sources */,
+				C7CFBE0A18C0586B00598F45 /* MMPreferences.m in Sources */,
 				C7C83DD218BFE79E0033BC97 /* MarshmallowCoreTests.m in Sources */,
+				C7CFBE0818C0586B00598F45 /* MMInit.m in Sources */,
+				C7CFBDF518C0585300598F45 /* NSString+Marshmallow.m in Sources */,
+				C7CFBDF318C0585300598F45 /* NSMutableArray+Marshmallow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +467,7 @@
 				C7C83DD718BFE79E0033BC97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7C83DD818BFE79E0033BC97 /* Build configuration list for PBXNativeTarget "MarshmallowCoreTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +476,7 @@
 				C7C83DDA18BFE79E0033BC97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
