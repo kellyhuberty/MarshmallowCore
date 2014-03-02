@@ -86,7 +86,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = 'MarshmallowCore', 'MarshmallowCore/Categories/*.{h,m}' 'Classes/**/*.{h,m}'
+  s.source_files  = 'MarshmallowCore', 'MarshmallowCore/Categories/*.{h,m}', 'MarshmallowCore/Categories/NSString+Marshmallow.h', 'MarshmallowCore/Categories/NSMutableArray+Marshmallow.h', 'Classes/**/*.{h,m}'
   #s.exclude_files = 'C'
 
   #s.public_header_files = 'MarshmallowCore/**/*.h', 'MarshmallowCore/Catagories/*.h' 
