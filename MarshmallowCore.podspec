@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 * Easy preferences.
 "
 
-  #s.homepage     = "http://EXAMPLE/MarshmallowCore"
+  s.homepage     = "http://github.com/kellyhuberty/MarshmallowCore"
   # s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
 
 
