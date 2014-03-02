@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
   s.author             = { "Kelly Huberty" => "kellyhuberty@gmail.com" }
   # s.authors          = { "Kelly Huberty" => "kellyhuberty@gmail.com" }
   # s.author           = 'Kelly Huberty'
-  # s.social_media_url = "http://twitter.com/kellyhuberty"
+  s.social_media_url = "http://twitter.com/kellyhuberty"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -73,7 +73,9 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://github.com/kellyhuberty/MarshmallowCore.git", :tag => "0.0.1" }
+  s.source       = { :git => "http://github.com/kellyhuberty/MarshmallowCore.git", :tag => "v0.0.1" }
+  
+  
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
