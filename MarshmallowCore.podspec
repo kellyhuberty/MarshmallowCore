@@ -8,12 +8,12 @@ Pod::Spec.new do |s|
 * MMLog: a configurable version of NSLog that logs only when you want it to.
 * Easy preferences.
 "
-  s.homepage     = "http://github.com/kellyhuberty/MarshmallowCore"
+  s.homepage     = "https://github.com/kellyhuberty/MarshmallowCore"
   s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
   s.author             = { "Kelly Huberty" => "kellyhuberty@gmail.com" }
   s.social_media_url = "http://twitter.com/kellyhuberty"
   s.ios.deployment_target = '7.0'
-  s.source       = { :git => "http://github.com/kellyhuberty/MarshmallowCore.git", :tag => "v0.0.1" }
+  s.source       = { :git => "https://github.com/kellyhuberty/MarshmallowCore.git", :tag => "v0.0.1" }
 s.source_files  = 'MarshmallowCore', 'MarshmallowCore/Categories/*.{h,m}', 'MarshmallowCore/Categories/NSString+Marshmallow.h', 'MarshmallowCore/Categories/NSMutableArray+Marshmallow.h', 'Classes/**/*.{h,m}'
   s.framework  = 'Foundation'
 end
