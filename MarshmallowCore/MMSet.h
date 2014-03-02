@@ -12,11 +12,14 @@
     
     BOOL _dirty;
     NSMutableArray * _arr;
-    NSMutableDictionary * _dict;
+    NSMutableDictionary * _index;
+    NSString * _indexPropertyName;
     
 }
+@property(nonatomic, retain)NSString * indexPropertyName;
+
 
 -(void)objectForKey:(id)obj;
--(void)setObject:(id)obj forKey:(NSObject *)key;
+//-(void)setObject:(id)obj forKey:(NSObject *)key;
 
 @end

@@ -19,7 +19,7 @@
         return nil;
     }
     _arr = [NSMutableArray new];
-    _dict = [NSMutableDictionary new];
+    _index = [NSMutableDictionary new];
     return self;
 }
 
@@ -44,6 +44,7 @@
 - (void)insertObject:(id)anObject atIndex:(NSUInteger)index{
     
     [_arr insertObject:anObject atIndex:index];
+    
     
 }
 
