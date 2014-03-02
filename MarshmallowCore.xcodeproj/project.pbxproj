@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7AB7F2F18C3D0C100E4D160 /* NSMutableArray+Marshmallow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7CFBDEE18C0585300598F45 /* NSMutableArray+Marshmallow.h */; };
+		C7AB7F3018C3D0D300E4D160 /* NSString+Marshmallow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7CFBDF018C0585300598F45 /* NSString+Marshmallow.h */; };
 		C7C83DB618BFE79E0033BC97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C83DB518BFE79E0033BC97 /* Foundation.framework */; };
 		C7C83DC418BFE79E0033BC97 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C83DC318BFE79E0033BC97 /* XCTest.framework */; };
 		C7C83DC518BFE79E0033BC97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C83DB518BFE79E0033BC97 /* Foundation.framework */; };
@@ -47,6 +49,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				C7AB7F3018C3D0D300E4D160 /* NSString+Marshmallow.h in CopyFiles */,
+				C7AB7F2F18C3D0C100E4D160 /* NSMutableArray+Marshmallow.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
