@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C7AB7F2F18C3D0C100E4D160 /* NSMutableArray+Marshmallow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7CFBDEE18C0585300598F45 /* NSMutableArray+Marshmallow.h */; };
 		C7AB7F3018C3D0D300E4D160 /* NSString+Marshmallow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7CFBDF018C0585300598F45 /* NSString+Marshmallow.h */; };
+		C7B3C5C818D6B10900B99849 /* NSURL+Marshmallow.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B3C5C718D6B10900B99849 /* NSURL+Marshmallow.m */; };
 		C7C83DB618BFE79E0033BC97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C83DB518BFE79E0033BC97 /* Foundation.framework */; };
 		C7C83DC418BFE79E0033BC97 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C83DC318BFE79E0033BC97 /* XCTest.framework */; };
 		C7C83DC518BFE79E0033BC97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C83DB518BFE79E0033BC97 /* Foundation.framework */; };
@@ -57,6 +58,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C7B3C5C618D6B10900B99849 /* NSURL+Marshmallow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Marshmallow.h"; sourceTree = "<group>"; };
+		C7B3C5C718D6B10900B99849 /* NSURL+Marshmallow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Marshmallow.m"; sourceTree = "<group>"; };
 		C7C83DB218BFE79E0033BC97 /* libMarshmallowCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMarshmallowCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C83DB518BFE79E0033BC97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7C83DC218BFE79E0033BC97 /* MarshmallowCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarshmallowCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +191,8 @@
 				C7CFBDEF18C0585300598F45 /* NSMutableArray+Marshmallow.m */,
 				C7CFBDF018C0585300598F45 /* NSString+Marshmallow.h */,
 				C7CFBDF118C0585300598F45 /* NSString+Marshmallow.m */,
+				C7B3C5C618D6B10900B99849 /* NSURL+Marshmallow.h */,
+				C7B3C5C718D6B10900B99849 /* NSURL+Marshmallow.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				C7CFBE0518C0586B00598F45 /* MMDebug.m in Sources */,
 				C7CFBE0D18C0586B00598F45 /* MMUtility.m in Sources */,
 				C7CFBE0918C0586B00598F45 /* MMPreferences.m in Sources */,
+				C7B3C5C818D6B10900B99849 /* NSURL+Marshmallow.m in Sources */,
 				C7CFBE0718C0586B00598F45 /* MMInit.m in Sources */,
 				C7CFBDF418C0585300598F45 /* NSString+Marshmallow.m in Sources */,
 				C7CFBDF218C0585300598F45 /* NSMutableArray+Marshmallow.m in Sources */,

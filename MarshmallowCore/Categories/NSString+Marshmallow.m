@@ -25,7 +25,7 @@
         
     }
     
-    [str appendFormat:@"%@", array[[array count]]];
+    [str appendFormat:@"%@", array[([array count] - 1)]];
     
     NSString * rtnStr = [NSString stringWithString:str];
     

@@ -13,9 +13,9 @@
     
     
 }
-
+/**
+ *  Call this method in your app delegate to initiate Marshmallow functions...
+ */
 +(void)start;
-+(void)loadControlMaps;
-+(void)createDefaultControlMaps;
 
 @end
