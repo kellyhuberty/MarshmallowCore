@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MarshmallowCore"
-  s.version      = "0.0.1"
+  s.version      = “0.0.2”
   s.summary      = "Core memory management and debug components for even the most basic Cocoa application."
   s.description  = "MarshmallowCore contains basic Preference, memory management and debug logging functions. 
                     Features include:
