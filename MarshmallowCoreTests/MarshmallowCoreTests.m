@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "NSString+Marshmallow.h"
+
 
 @interface MarshmallowCoreTests : XCTestCase
 
@@ -26,9 +28,26 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testStringImplode
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+
+    NSString * foobar = [NSString implode:@[@"foo", @"bar"] glue:@""];
+
+    BOOL test = [foobar isEqualToString:@"foobar"];
+    
+    XCTAssertTrue(test, @"testStringImplode %@", foobar);
+}
+
+
+- (void)testStringImplodeWithGlue
+{
+    
+    NSString * foobar = [NSString implode:@[@"foo", @"bar"] glue:@":"];
+    
+    BOOL test = [foobar isEqualToString:@"foo:bar"];
+    
+    XCTAssertTrue(test, @"testStringImplode %@", foobar);
+
 }
 
 @end

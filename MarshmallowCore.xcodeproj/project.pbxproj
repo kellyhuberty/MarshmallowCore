@@ -31,6 +31,9 @@
 		C7CFBE0C18C0586B00598F45 /* MMSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBE0018C0586B00598F45 /* MMSet.m */; };
 		C7CFBE0D18C0586B00598F45 /* MMUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBE0218C0586B00598F45 /* MMUtility.m */; };
 		C7CFBE0E18C0586B00598F45 /* MMUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBE0218C0586B00598F45 /* MMUtility.m */; };
+		C7FC30B618F76E8800A6E700 /* MMSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FC30B518F76E8800A6E700 /* MMSetTests.m */; };
+		C7FC30B818F7710A00A6E700 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FC30B718F7710A00A6E700 /* CoreData.framework */; };
+		C7FC30BB18F7801200A6E700 /* MMTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FC30BA18F7801200A6E700 /* MMTestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,10 @@
 		C7CFBE0118C0586B00598F45 /* MMUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUtility.h; sourceTree = "<group>"; };
 		C7CFBE0218C0586B00598F45 /* MMUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUtility.m; sourceTree = "<group>"; };
 		C7CFBE1118C05E2800598F45 /* MarshmallowCore-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MarshmallowCore-Prefix.pch"; sourceTree = "<group>"; };
+		C7FC30B518F76E8800A6E700 /* MMSetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSetTests.m; sourceTree = "<group>"; };
+		C7FC30B718F7710A00A6E700 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C7FC30B918F7801200A6E700 /* MMTestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTestObject.h; sourceTree = "<group>"; };
+		C7FC30BA18F7801200A6E700 /* MMTestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7FC30B818F7710A00A6E700 /* CoreData.framework in Frameworks */,
 				C7C83DC418BFE79E0033BC97 /* XCTest.framework in Frameworks */,
 				C7C83DC718BFE79E0033BC97 /* UIKit.framework in Frameworks */,
 				C7C83DCA18BFE79E0033BC97 /* libMarshmallowCore.a in Frameworks */,
@@ -131,6 +139,7 @@
 		C7C83DB418BFE79E0033BC97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7FC30B718F7710A00A6E700 /* CoreData.framework */,
 				C7C83DB518BFE79E0033BC97 /* Foundation.framework */,
 				C7C83DC318BFE79E0033BC97 /* XCTest.framework */,
 				C7C83DC618BFE79E0033BC97 /* UIKit.framework */,
@@ -170,6 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				C7C83DD118BFE79E0033BC97 /* MarshmallowCoreTests.m */,
+				C7FC30B518F76E8800A6E700 /* MMSetTests.m */,
+				C7FC30B918F7801200A6E700 /* MMTestObject.h */,
+				C7FC30BA18F7801200A6E700 /* MMTestObject.m */,
 				C7C83DCC18BFE79E0033BC97 /* Supporting Files */,
 			);
 			path = MarshmallowCoreTests;
@@ -295,7 +307,9 @@
 			files = (
 				C7CFBE0C18C0586B00598F45 /* MMSet.m in Sources */,
 				C7CFBE0618C0586B00598F45 /* MMDebug.m in Sources */,
+				C7FC30B618F76E8800A6E700 /* MMSetTests.m in Sources */,
 				C7CFBE0E18C0586B00598F45 /* MMUtility.m in Sources */,
+				C7FC30BB18F7801200A6E700 /* MMTestObject.m in Sources */,
 				C7CFBE0A18C0586B00598F45 /* MMPreferences.m in Sources */,
 				C7C83DD218BFE79E0033BC97 /* MarshmallowCoreTests.m in Sources */,
 				C7CFBE0818C0586B00598F45 /* MMInit.m in Sources */,

@@ -249,6 +249,20 @@ NSString * arrayValueHash(NSArray * array)
     return keyHash;
 }
 
+NSArray * orderedArrayForDictionary(NSDictionary * dict)
+{
+    NSArray * keys = [[dict allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    NSMutableArray * values = [NSMutableArray array];
+
+    for (NSString * key in keys) {
+        [values addObject:[dict valueForKey:key]];
+    }
+    
+    return values;
+}
+
+
+
 //NSString * orderedKeyValueArraysForDictionary(NSDictionary * dict, NSArray** keys, NSArray** values)
 //{
 //    
