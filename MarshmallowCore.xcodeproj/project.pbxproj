@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7412F7B190ED7A60028DD16 /* MMCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = C7412F7A190ED7A60028DD16 /* MMCoreData.m */; };
+		C7412F7C190ED7A60028DD16 /* MMCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = C7412F7A190ED7A60028DD16 /* MMCoreData.m */; };
+		C7412F7D190ED7DA0028DD16 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FC30B718F7710A00A6E700 /* CoreData.framework */; };
 		C7AB7F2F18C3D0C100E4D160 /* NSMutableArray+Marshmallow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7CFBDEE18C0585300598F45 /* NSMutableArray+Marshmallow.h */; };
 		C7AB7F3018C3D0D300E4D160 /* NSString+Marshmallow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7CFBDF018C0585300598F45 /* NSString+Marshmallow.h */; };
 		C7B3C5C818D6B10900B99849 /* NSURL+Marshmallow.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B3C5C718D6B10900B99849 /* NSURL+Marshmallow.m */; };
@@ -32,7 +35,7 @@
 		C7CFBE0D18C0586B00598F45 /* MMUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBE0218C0586B00598F45 /* MMUtility.m */; };
 		C7CFBE0E18C0586B00598F45 /* MMUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBE0218C0586B00598F45 /* MMUtility.m */; };
 		C7FC30B618F76E8800A6E700 /* MMSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FC30B518F76E8800A6E700 /* MMSetTests.m */; };
-		C7FC30B818F7710A00A6E700 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FC30B718F7710A00A6E700 /* CoreData.framework */; };
+		C7FC30B818F7710A00A6E700 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FC30B718F7710A00A6E700 /* CoreData.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C7FC30BB18F7801200A6E700 /* MMTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FC30BA18F7801200A6E700 /* MMTestObject.m */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C7412F79190ED7A60028DD16 /* MMCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCoreData.h; sourceTree = "<group>"; };
+		C7412F7A190ED7A60028DD16 /* MMCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCoreData.m; sourceTree = "<group>"; };
 		C7B3C5C618D6B10900B99849 /* NSURL+Marshmallow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Marshmallow.h"; sourceTree = "<group>"; };
 		C7B3C5C718D6B10900B99849 /* NSURL+Marshmallow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Marshmallow.m"; sourceTree = "<group>"; };
 		C7C83DB218BFE79E0033BC97 /* libMarshmallowCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMarshmallowCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7412F7D190ED7DA0028DD16 /* CoreData.framework in Frameworks */,
 				C7C83DB618BFE79E0033BC97 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +167,8 @@
 				C7CFBE0018C0586B00598F45 /* MMSet.m */,
 				C7CFBE0118C0586B00598F45 /* MMUtility.h */,
 				C7CFBE0218C0586B00598F45 /* MMUtility.m */,
+				C7412F79190ED7A60028DD16 /* MMCoreData.h */,
+				C7412F7A190ED7A60028DD16 /* MMCoreData.m */,
 				C7CFBDED18C0585300598F45 /* Categories */,
 				C7C83DB818BFE79E0033BC97 /* Supporting Files */,
 			);
@@ -295,6 +303,7 @@
 				C7CFBE0D18C0586B00598F45 /* MMUtility.m in Sources */,
 				C7CFBE0918C0586B00598F45 /* MMPreferences.m in Sources */,
 				C7B3C5C818D6B10900B99849 /* NSURL+Marshmallow.m in Sources */,
+				C7412F7B190ED7A60028DD16 /* MMCoreData.m in Sources */,
 				C7CFBE0718C0586B00598F45 /* MMInit.m in Sources */,
 				C7CFBDF418C0585300598F45 /* NSString+Marshmallow.m in Sources */,
 				C7CFBDF218C0585300598F45 /* NSMutableArray+Marshmallow.m in Sources */,
@@ -309,6 +318,7 @@
 				C7CFBE0618C0586B00598F45 /* MMDebug.m in Sources */,
 				C7FC30B618F76E8800A6E700 /* MMSetTests.m in Sources */,
 				C7CFBE0E18C0586B00598F45 /* MMUtility.m in Sources */,
+				C7412F7C190ED7A60028DD16 /* MMCoreData.m in Sources */,
 				C7FC30BB18F7801200A6E700 /* MMTestObject.m in Sources */,
 				C7CFBE0A18C0586B00598F45 /* MMPreferences.m in Sources */,
 				C7C83DD218BFE79E0033BC97 /* MarshmallowCoreTests.m in Sources */,

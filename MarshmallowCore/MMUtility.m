@@ -53,12 +53,7 @@ BOOL MMRelease(NSObject * obj){
     if ( !arcEnabled && obj != NULL ) {
         SEL sel = NSSelectorFromString(@"release");
         //if ([obj respondsToSelector:sel] &&) {
-        
-        NSLog(@"releasing object %@ Count : %i", obj, CFGetRetainCount((__bridge CFTypeRef)(obj)) );
         [obj performSelector:sel];
-        NSLog(@"object %@ released. Count : %i", obj, CFGetRetainCount((__bridge CFTypeRef)(obj)) );
-
-        
         //}
         
         return true;
