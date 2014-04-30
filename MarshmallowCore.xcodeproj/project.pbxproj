@@ -12,6 +12,8 @@
 		C7412F7D190ED7DA0028DD16 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FC30B718F7710A00A6E700 /* CoreData.framework */; };
 		C7413048191127840028DD16 /* MMAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = C7413047191127840028DD16 /* MMAttribute.m */; };
 		C7413049191127840028DD16 /* MMAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = C7413047191127840028DD16 /* MMAttribute.m */; };
+		C741304C19117C180028DD16 /* MMAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C741304B19117C180028DD16 /* MMAdapter.m */; };
+		C741304D19117C180028DD16 /* MMAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C741304B19117C180028DD16 /* MMAdapter.m */; };
 		C7AB7F2F18C3D0C100E4D160 /* NSMutableArray+Marshmallow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7CFBDEE18C0585300598F45 /* NSMutableArray+Marshmallow.h */; };
 		C7AB7F3018C3D0D300E4D160 /* NSString+Marshmallow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7CFBDF018C0585300598F45 /* NSString+Marshmallow.h */; };
 		C7B3C5C818D6B10900B99849 /* NSURL+Marshmallow.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B3C5C718D6B10900B99849 /* NSURL+Marshmallow.m */; };
@@ -70,6 +72,8 @@
 		C7412F7A190ED7A60028DD16 /* MMCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCoreData.m; sourceTree = "<group>"; };
 		C7413046191127840028DD16 /* MMAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAttribute.h; sourceTree = "<group>"; };
 		C7413047191127840028DD16 /* MMAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAttribute.m; sourceTree = "<group>"; };
+		C741304A19117C180028DD16 /* MMAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAdapter.h; sourceTree = "<group>"; };
+		C741304B19117C180028DD16 /* MMAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAdapter.m; sourceTree = "<group>"; };
 		C7B3C5C618D6B10900B99849 /* NSURL+Marshmallow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Marshmallow.h"; sourceTree = "<group>"; };
 		C7B3C5C718D6B10900B99849 /* NSURL+Marshmallow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Marshmallow.m"; sourceTree = "<group>"; };
 		C7C83DB218BFE79E0033BC97 /* libMarshmallowCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMarshmallowCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +164,8 @@
 		C7C83DB718BFE79E0033BC97 /* MarshmallowCore */ = {
 			isa = PBXGroup;
 			children = (
+				C741304A19117C180028DD16 /* MMAdapter.h */,
+				C741304B19117C180028DD16 /* MMAdapter.m */,
 				C7413046191127840028DD16 /* MMAttribute.h */,
 				C7413047191127840028DD16 /* MMAttribute.m */,
 				C7CFBDF718C0586B00598F45 /* MarshmallowCore.h */,
@@ -306,6 +312,7 @@
 			files = (
 				C7CFBE0B18C0586B00598F45 /* MMSet.m in Sources */,
 				C7CFBE0518C0586B00598F45 /* MMDebug.m in Sources */,
+				C741304C19117C180028DD16 /* MMAdapter.m in Sources */,
 				C7CFBE0D18C0586B00598F45 /* MMUtility.m in Sources */,
 				C7CFBE0918C0586B00598F45 /* MMPreferences.m in Sources */,
 				C7B3C5C818D6B10900B99849 /* NSURL+Marshmallow.m in Sources */,
@@ -329,6 +336,7 @@
 				C7FC30BB18F7801200A6E700 /* MMTestObject.m in Sources */,
 				C7CFBE0A18C0586B00598F45 /* MMPreferences.m in Sources */,
 				C7C83DD218BFE79E0033BC97 /* MarshmallowCoreTests.m in Sources */,
+				C741304D19117C180028DD16 /* MMAdapter.m in Sources */,
 				C7CFBE0818C0586B00598F45 /* MMInit.m in Sources */,
 				C7CFBDF518C0585300598F45 /* NSString+Marshmallow.m in Sources */,
 				C7413049191127840028DD16 /* MMAttribute.m in Sources */,
