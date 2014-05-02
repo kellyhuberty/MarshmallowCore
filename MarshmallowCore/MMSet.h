@@ -13,11 +13,15 @@
     BOOL _dirty;
     NSMutableArray * _arr;
     NSMutableDictionary * _indexes;
+    NSMutableDictionary * _unique;
+
     //NSString * _indexPropertyName;
     //NSString * _enforcedClassName;
     
     NSLock * lock;
     BOOL _lockManually;
+    
+    
 }
 @property(nonatomic, retain)NSMutableDictionary * indexes;
 @property(nonatomic, retain)NSString * indexPropertyName;
@@ -27,6 +31,8 @@
 //-(void)setObject:(id)obj forKey:(NSObject *)key;
 
 -(void)addIndexForKey:(NSString *)key;
+-(void)addIndexForKey:(NSString *)key unique:(BOOL)unique;
+
 -(void)indexAllForKey:(NSString *)key;
 
 -(NSArray *)objectsWithValue:(id<NSCopying>)value forKey:(NSString *)key;

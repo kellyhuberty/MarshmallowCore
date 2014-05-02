@@ -20,15 +20,27 @@
     }
     _arr = [NSMutableArray new];
     _indexes = [NSMutableDictionary new];
+    _unique = [NSMutableDictionary new];
     return self;
 }
 
 
 -(void)addIndexForKey:(NSString *)key{
     
+    [self addIndexForKey:key unique:NO];
+    
+}
+
+-(void)addIndexForKey:(NSString *)key unique:(BOOL)unique{
+    
     if (!_indexes[key]) {
-    _indexes[key] = [NSMutableDictionary dictionary];
+        _indexes[key] = [NSMutableDictionary dictionary];
     }
+    
+    if (unique) {
+        [_unique setObject:key forKey:key];
+    }
+    
     
 }
 
@@ -67,6 +79,11 @@
             else{
                 
                 NSMutableArray * array = [(NSMutableDictionary *)_indexes[key] objectForKey:value];
+                
+                if ([_unique valueForKey:key] && obj) {
+                    [array removeAllObjects];
+                }
+                
                 [array addObject:obj];
                 
             }
@@ -111,6 +128,21 @@
     }
     
     return @[];
+    
+}
+
+
+-(id)objectWithValue:(id<NSCopying>)value forKey:(NSString *)key{
+    
+    NSMutableDictionary * dict = _indexes[key];
+    
+    if(dict){
+        
+        return ((NSArray *)dict[value])[0];
+        
+    }
+    
+    return nil;
     
 }
 
