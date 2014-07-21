@@ -18,9 +18,9 @@
     if (nil == self){
         return nil;
     }
-    _arr = [NSMutableArray new];
-    _indexes = [NSMutableDictionary new];
-    _unique = [NSMutableDictionary new];
+    _arr = [[NSMutableArray alloc]init];
+    _indexes = [[NSMutableDictionary alloc]init];
+    _unique = [[NSMutableDictionary alloc]init];
     return self;
 }
 
@@ -158,9 +158,9 @@
 //    
 //}
 
--(void)checkObjectValidity:(id)obj{
+-(BOOL)checkObjectValidity:(id)obj{
     
-
+    return YES;
     
 }
 
@@ -224,6 +224,9 @@
 - (void)removeLastObject{
     
     
+    [self removeIndexForObject:_arr[[_arr count]-1]];
+    
+    
     [_arr removeLastObject];
     
     
@@ -232,10 +235,22 @@
 
 - (void)replaceObjectAtIndex:(NSUInteger)index withObject:(id)anObject{
     
-    [self checkObjectValidity:anObject];
+    if ([self checkObjectValidity:anObject]) {
+        
+        
+        
+        [self removeIndexForObject:_arr[index]];
+
+        
+        
+        
+        
+        [_arr replaceObjectAtIndex:index withObject:anObject];
+        
+        [self indexObject:anObject];
     
-    [_arr replaceObjectAtIndex:index withObject:anObject];
-    
+    }
+        
 }
 
 

@@ -29,6 +29,8 @@
     NSString * _controlName;//the name of the controller class from UIKit or otherwise that displays the data
     NSString * _controlProperty;//name for the property on the class that we're getting the value for and validating with
     NSDictionary * _controlOptions;//Key-values for properties to set on the control to configure it properly for the attribute it is setting.
+    NSDictionary * _storeOptions;//Key-values for properties specific to certain Store types.
+
     NSString * _primativeType;//This must be defined if
     NSString * _defaultValue;//Default value expressed as a string
     
@@ -37,6 +39,10 @@
     NSString * _storeType;
     
         //MMAttribute * _objectDescription;
+    BOOL _readonly;
+
+    BOOL _autoincrement;
+
     BOOL _strictCasting;
     //BOOL _isBool;
     
@@ -54,6 +60,8 @@
 //@property (nonatomic, retain) NSString * defaultValue;
 @property (nonatomic, retain) id value;
 @property (nonatomic, retain) id defaultValue;
+@property (nonatomic) BOOL readonly;
+@property (nonatomic) BOOL autoincrement;
 @property (nonatomic) BOOL strictCasting;
 //@property (nonatomic) BOOL isBool;
 

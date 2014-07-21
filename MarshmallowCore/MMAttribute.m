@@ -285,6 +285,8 @@
     //_controlProperty = [dict objectForKey:@"controlproperty"];
     
     _controlOptions = mmCopy([self verify:[dict objectForKey:@"controloptions"] class:[NSString class] name:@"controloptions"]);
+    
+    _storeOptions = mmCopy([self verify:[dict objectForKey:@"controloptions"] class:[NSString class] name:@"controloptions"]);
     //_controlOptions = [dict objectForKey:@"propertyname"];
     
 
@@ -293,11 +295,19 @@
     
     _primativeType = mmCopy([self verify:[dict objectForKey:@"primativetype"] class:[NSString class] name:@"primativetype"]);
 
+    _primativeType = mmCopy([self verify:[dict objectForKey:@"primative"] class:[NSString class] name:@"primative"]);
+
+    
     _storeName = mmCopy((NSString *)[self verify:[dict objectForKey:@"storename"] class:[NSString class] name:@"storename"]);
     
     _storeType = mmCopy([self verify:[dict objectForKey:@"storetype"] class:[NSString class] name:@"storetype"]);
 
         //[dict objectForKey:@"displayname"];
+    
+    _autoincrement = [((NSNumber *) [self verify:[dict objectForKey:@"autoincrement"] class:[NSNumber class] name:@"autoincrement"]) boolValue];
+    
+    _readonly = [((NSNumber *) [self verify:[dict objectForKey:@"readonly"] class:[NSNumber class] name:@"readonly"]) boolValue];
+
 }
 
 -(id)verify:(NSObject*)obj class:(Class)class name:(NSString *)name{
@@ -394,6 +404,7 @@
     
     MMLog(@"            name:%@", _name);
     MMLog(@"            displayname:%@", _displayName);
+    MMLog(@"            classname:%@", _classname);
     MMLog(@"            controlname:%@", _controlName);
     MMLog(@"            controlproperty:%@", _controlProperty);
     MMLog(@"            control options:%@", _controlOptions);
