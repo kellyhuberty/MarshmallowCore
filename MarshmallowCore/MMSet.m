@@ -44,6 +44,19 @@
     
 }
 
+-(NSArray *)allValuesForIndexKey:(NSString*)key{
+    
+    id allValues = [(NSMutableDictionary*)_indexes[key] allKeys];
+   
+    
+    if (![allValues isKindOfClass:[NSArray class]]) {
+        allValues = @[allValues];
+    }
+    
+    return allValues;
+
+}
+
 -(void)indexAllForKey:(NSString *)key{
     
     [self addIndexForKey:key];
@@ -191,12 +204,13 @@
 #pragma mark NSMutableArray Overides
 - (void)insertObject:(id)anObject atIndex:(NSUInteger)index{
     
-    [self checkObjectValidity:anObject];
+    if ( [self checkObjectValidity:anObject] && [self willAddObject:anObject] ) {
+        
     
     [_arr insertObject:anObject atIndex:index];
     
     [self indexObject:anObject];
-
+    }
 }
 
 
@@ -204,19 +218,23 @@
     
     NSObject * obj = [_arr objectAtIndex:index];
     
-    [_arr removeObjectAtIndex:index];
+    if ([self willRemoveObject:obj]) {
+
+        [_arr removeObjectAtIndex:index];
     
-    [self removeIndexForObject:obj];
-    
+        [self removeIndexForObject:obj];
+    }
 }
 
 - (void)addObject:(id)anObject{
-
-    [self checkObjectValidity:anObject];
     
-    [_arr addObject:anObject];
+    if ([self checkObjectValidity:anObject] && [self willAddObject:anObject]) {
+    
+        [_arr addObject:anObject];
 
-    [self indexObject:anObject];
+        [self indexObject:anObject];
+        
+    }
     
 }
 
@@ -224,26 +242,22 @@
 - (void)removeLastObject{
     
     
-    [self removeIndexForObject:_arr[[_arr count]-1]];
     
+    if ([self willRemoveObject:_arr[[_arr count]-1] ]) {
     
-    [_arr removeLastObject];
+        [self removeIndexForObject:_arr[[_arr count]-1]];
     
+        [_arr removeLastObject];
     
+    }
     
 }
 
 - (void)replaceObjectAtIndex:(NSUInteger)index withObject:(id)anObject{
     
-    if ([self checkObjectValidity:anObject]) {
-        
-        
+    if ([self checkObjectValidity:anObject] && [self willAddObject:anObject]) {
         
         [self removeIndexForObject:_arr[index]];
-
-        
-        
-        
         
         [_arr replaceObjectAtIndex:index withObject:anObject];
         
@@ -251,6 +265,28 @@
     
     }
         
+}
+
+-(BOOL)willAddObject:(id)obj{
+    
+    return YES;
+    
+}
+
+-(BOOL)willRemoveObject:(id)obj{
+    
+    return YES;
+    
+}
+
+-(void)didAddObject:(id)obj{
+    
+    
+}
+
+-(void)didRemoveObject:(id)obj{
+    
+    
 }
 
 

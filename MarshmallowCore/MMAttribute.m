@@ -57,8 +57,8 @@
     
     if (self) {
         
-        [self loadInstance];
-
+        _nullable = YES;
+        
     }
     
     return self;
@@ -66,12 +66,12 @@
 
 -(id)initWithDictionary:(NSDictionary *)dict{
     
-    self = [super init];
+    self = [self init];
     
     
     if (self) {
         
-        [self loadInstance];
+        //[self loadInstance];
         [self loadDescriptionFromDictionary:dict];
         
         
@@ -85,7 +85,7 @@
 
 -(id)initWithName:(NSString *)aName displayName:(NSString *)aDisplayName controlClassName:(NSString *)controlClassName enforcedClassName:(NSString *)aClassName{
     
-    self = [super init];
+    self = [self init];
     
     
     if (self) {
@@ -145,7 +145,7 @@
 
 -(id)initWithName:(NSString *)aName displayName:(NSString *)aDisplayName controlClassName:(NSString *)controlClassName controlPropertyName:(NSString *)propertyName controlOptions:(NSDictionary *)options{
     
-    self = [super init];
+    self = [self init];
     
     
     if (self) {
@@ -303,11 +303,23 @@
     _storeType = mmCopy([self verify:[dict objectForKey:@"storetype"] class:[NSString class] name:@"storetype"]);
 
         //[dict objectForKey:@"displayname"];
+    if ([dict objectForKey:@"autoincrement"] ) {
+        _autoincrement = [((NSNumber *) [self verify:[dict objectForKey:@"autoincrement"] class:[NSNumber class] name:@"autoincrement"]) boolValue];
+    }
     
-    _autoincrement = [((NSNumber *) [self verify:[dict objectForKey:@"autoincrement"] class:[NSNumber class] name:@"autoincrement"]) boolValue];
+    if ([dict objectForKey:@"readonly"] ) {
+        _readonly = [((NSNumber *) [self verify:[dict objectForKey:@"readonly"] class:[NSNumber class] name:@"readonly"]) boolValue];
+    }
     
-    _readonly = [((NSNumber *) [self verify:[dict objectForKey:@"readonly"] class:[NSNumber class] name:@"readonly"]) boolValue];
-
+    if ([dict objectForKey:@"nullable"] ) {
+        _nullable = [((NSNumber *) [self verify:[dict objectForKey:@"nullable"] class:[NSNumber class] name:@"nullable"]) boolValue];
+    }
+    
+    if ([dict objectForKey:@"unique"] ) {
+        _unique = [((NSNumber *) [self verify:[dict objectForKey:@"unique"] class:[NSNumber class] name:@"unique"]) boolValue];
+    }
+    
+    
 }
 
 -(id)verify:(NSObject*)obj class:(Class)class name:(NSString *)name{

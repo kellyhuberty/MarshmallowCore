@@ -41,8 +41,13 @@
 -(NSArray *)objectsWithValue:(id<NSCopying>)value forKey:(NSString *)key;
 -(id)objectWithValue:(id<NSCopying>)value forKey:(NSString *)key;
 
+-(NSArray *)allValuesForIndexKey:(NSString*)key;
 
 -(NSLock *)lockManually;
 -(void)lockAutomatically;
+
+-(BOOL)willAddObject:(id)obj;
+-(BOOL)willRemoveObject:(id)obj;
+
 
 @end

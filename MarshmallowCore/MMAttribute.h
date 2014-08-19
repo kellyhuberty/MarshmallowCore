@@ -41,6 +41,10 @@
         //MMAttribute * _objectDescription;
     BOOL _readonly;
 
+    BOOL _nullable;
+    
+    BOOL _unique;
+    
     BOOL _autoincrement;
 
     BOOL _strictCasting;
@@ -61,6 +65,8 @@
 @property (nonatomic, retain) id value;
 @property (nonatomic, retain) id defaultValue;
 @property (nonatomic) BOOL readonly;
+@property (nonatomic) BOOL nullable;
+@property (nonatomic) BOOL unique;
 @property (nonatomic) BOOL autoincrement;
 @property (nonatomic) BOOL strictCasting;
 //@property (nonatomic) BOOL isBool;
