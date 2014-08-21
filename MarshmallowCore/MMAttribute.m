@@ -344,7 +344,7 @@
         }
     }
     
-    return mmRetain(obj);
+    return obj;
 }
 
 
