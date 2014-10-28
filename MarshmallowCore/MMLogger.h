@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MMDebug : NSObject{
+@interface MMLogger : NSObject{
     
     
     
@@ -40,6 +40,16 @@ int MMDebugCount();
 
 void MMDebugCountReset();
 
+
+
+
+
+
+void MMDebug(id text, ...);
+void MMInfo(id text, ...);
+void MMNotice(id text, ...);
+void MMWarning(id text, ...);
+void MMError(id text, ...);
 
 
 

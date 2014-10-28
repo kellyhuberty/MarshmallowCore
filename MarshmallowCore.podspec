@@ -17,4 +17,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/kellyhuberty/MarshmallowCore.git", :tag => "v0.0.7" }
 s.source_files  = 'MarshmallowCore', 'MarshmallowCore/Categories/*.{h,m}', 'MarshmallowCore/Categories/NSString+Marshmallow.h', 'MarshmallowCore/Categories/NSMutableArray+Marshmallow.h', 'Classes/**/*.{h,m}'
   s.framework  = 'Foundation'
+  s.requires_arc = true
+  s.compiler_flags = '-ObjC'
 end

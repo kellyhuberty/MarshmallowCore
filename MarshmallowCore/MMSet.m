@@ -159,7 +159,11 @@
     
 }
 
-
+-(NSDictionary *)dictionaryForIndexKey:(NSString *)key{
+    
+    return [_indexes[key] copy];
+    
+}
 
 //-(void)indexAllForKey:(NSString *)key{
 //    

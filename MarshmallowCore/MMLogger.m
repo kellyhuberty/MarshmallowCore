@@ -6,7 +6,7 @@
 //
 //
 #import "MMPreferences.h"
-#include "MMDebug.h"
+#import "MMLogger.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -57,7 +57,7 @@ void MMLogDebugModeV(id text, va_list args){
 
 
 
-@implementation MMDebug
+@implementation MMLogger
 
 +(void)loadDebugMode{
     //_debug_mode = [[MMPreferences valueForKey:@"MMDebugModeScheme"] intValue];
@@ -99,6 +99,103 @@ void MMLogDebugModeV(id text, va_list args){
     
 }
 
+
+
+
+
+void inline MMDebug(id text, ...){
+    
+    #ifdef DEBUG
+        va_list args;
+        va_start(args, text);
+        
+        //#if DEBUG
+        //NSString *log_msg = [[[NSString alloc] initWithFormat:text arguments:args] autorelease];
+        //NSLogv(text, args);
+        //#else
+        if (_debug_mode > 0) {
+            //    MMLogDebugModeV(text, args);
+            NSLogv(text, args);
+        }
+        //#endif
+        va_end(args);
+    #endif
+    
+}
+
+void inline MMInfo(id text, ...){
+    
+    #ifdef DISTRIBUTION || DEBUG
+        va_list args;
+        va_start(args, text);
+        
+        //#if DEBUG
+        //NSString *log_msg = [[[NSString alloc] initWithFormat:text arguments:args] autorelease];
+        //NSLogv(text, args);
+        //#else
+        if (_debug_mode > 0) {
+            //    MMLogDebugModeV(text, args);
+            NSLogv(text, args);
+        }
+        //#endif
+        va_end(args);
+    #endif
+    
+}
+
+void inline MMNotice(id text, ...){
+    
+    #ifdef DISTRIBUTION || DEBUG
+        va_list args;
+        va_start(args, text);
+        
+        //#if DEBUG
+        //NSString *log_msg = [[[NSString alloc] initWithFormat:text arguments:args] autorelease];
+        //NSLogv(text, args);
+        //#else
+        if (_debug_mode > 0) {
+            //    MMLogDebugModeV(text, args);
+            NSLogv(text, args);
+        }
+        //#endif
+        va_end(args);
+    #endif
+
+}
+
+void inline MMWarning(id text, ...){
+    va_list args;
+    va_start(args, text);
+    
+    //#if DEBUG
+    //NSString *log_msg = [[[NSString alloc] initWithFormat:text arguments:args] autorelease];
+    //NSLogv(text, args);
+    //#else
+    //if (_debug_mode > 0) {
+        //    MMLogDebugModeV(text, args);
+        NSLogv(text, args);
+    //}
+    //#endif
+    va_end(args);
+    
+}
+
+void inline MMError(id text, ...){
+    va_list args;
+    va_start(args, text);
+    
+    //#if DEBUG
+    //NSString *log_msg = [[[NSString alloc] initWithFormat:text arguments:args] autorelease];
+    //NSLogv(text, args);
+    //#else
+    //if (_debug_mode > 0) {
+        //    MMLogDebugModeV(text, args);
+        NSLogv(text, args);
+    //}
+    //#endif
+    va_end(args);
+    
+}
 
 
 

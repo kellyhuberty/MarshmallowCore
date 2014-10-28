@@ -290,7 +290,7 @@
     //_controlOptions = [dict objectForKey:@"propertyname"];
     
 
-    _defaultValue = mmCopy([self verify:[dict objectForKey:@"default"] class:[NSString class] name:@"default"]);
+    _defaultValue = mmCopy([self verify:[dict objectForKey:@"default"] class:[NSObject class] name:@"default"]);
     //_defaultValue = [dict objectForKey:@"default"];
     
     _primativeType = mmCopy([self verify:[dict objectForKey:@"primativetype"] class:[NSString class] name:@"primativetype"]);
@@ -334,7 +334,7 @@
                 
             }
             else{
-                [NSException raise:@"MMInvalidArgumentException" format:@"Invalid class for attribute: %@"];
+                [NSException raise:@"MMInvalidArgumentException" format:@"Invalid class for attribute with name: %@. Object should be member of class %@. You should check your definition dictionary/plist to ensure that the attribute is defined correctly. ", name, NSStringFromClass(class)];
             }
         }
     }

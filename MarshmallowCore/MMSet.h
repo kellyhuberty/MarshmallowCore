@@ -50,4 +50,7 @@
 -(BOOL)willRemoveObject:(id)obj;
 
 
+-(NSDictionary *)dictionaryForIndexKey:(NSString *)key;
+
+
 @end

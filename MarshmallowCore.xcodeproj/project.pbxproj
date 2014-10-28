@@ -16,6 +16,7 @@
 		C741304D19117C180028DD16 /* MMAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C741304B19117C180028DD16 /* MMAdapter.m */; };
 		C7A346371967B8AA00EC08BB /* MMVersionStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A346361967B8AA00EC08BB /* MMVersionStringTests.m */; };
 		C7A3463A1967BD8B00EC08BB /* MMVersionString.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A346391967BD8B00EC08BB /* MMVersionString.m */; };
+		C7A8098219ED7D2700EA9876 /* MMLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A8098119ED7D2700EA9876 /* MMLogger.m */; };
 		C7AB7F2F18C3D0C100E4D160 /* NSMutableArray+Marshmallow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7CFBDEE18C0585300598F45 /* NSMutableArray+Marshmallow.h */; };
 		C7AB7F3018C3D0D300E4D160 /* NSString+Marshmallow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7CFBDF018C0585300598F45 /* NSString+Marshmallow.h */; };
 		C7B3C5C818D6B10900B99849 /* NSURL+Marshmallow.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B3C5C718D6B10900B99849 /* NSURL+Marshmallow.m */; };
@@ -30,8 +31,6 @@
 		C7CFBDF318C0585300598F45 /* NSMutableArray+Marshmallow.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDEF18C0585300598F45 /* NSMutableArray+Marshmallow.m */; };
 		C7CFBDF418C0585300598F45 /* NSString+Marshmallow.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDF118C0585300598F45 /* NSString+Marshmallow.m */; };
 		C7CFBDF518C0585300598F45 /* NSString+Marshmallow.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDF118C0585300598F45 /* NSString+Marshmallow.m */; };
-		C7CFBE0518C0586B00598F45 /* MMDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDFA18C0586B00598F45 /* MMDebug.m */; };
-		C7CFBE0618C0586B00598F45 /* MMDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDFA18C0586B00598F45 /* MMDebug.m */; };
 		C7CFBE0718C0586B00598F45 /* MMInit.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDFC18C0586B00598F45 /* MMInit.m */; };
 		C7CFBE0818C0586B00598F45 /* MMInit.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDFC18C0586B00598F45 /* MMInit.m */; };
 		C7CFBE0918C0586B00598F45 /* MMPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CFBDFE18C0586B00598F45 /* MMPreferences.m */; };
@@ -79,6 +78,8 @@
 		C7A346361967B8AA00EC08BB /* MMVersionStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVersionStringTests.m; sourceTree = "<group>"; };
 		C7A346381967BD8B00EC08BB /* MMVersionString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVersionString.h; sourceTree = "<group>"; };
 		C7A346391967BD8B00EC08BB /* MMVersionString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVersionString.m; sourceTree = "<group>"; };
+		C7A8098019ED7D2700EA9876 /* MMLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMLogger.h; path = MarshmallowCore/MMLogger.h; sourceTree = "<group>"; };
+		C7A8098119ED7D2700EA9876 /* MMLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMLogger.m; path = MarshmallowCore/MMLogger.m; sourceTree = "<group>"; };
 		C7B3C5C618D6B10900B99849 /* NSURL+Marshmallow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Marshmallow.h"; sourceTree = "<group>"; };
 		C7B3C5C718D6B10900B99849 /* NSURL+Marshmallow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Marshmallow.m"; sourceTree = "<group>"; };
 		C7C83DB218BFE79E0033BC97 /* libMarshmallowCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMarshmallowCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,8 +95,6 @@
 		C7CFBDF018C0585300598F45 /* NSString+Marshmallow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Marshmallow.h"; sourceTree = "<group>"; };
 		C7CFBDF118C0585300598F45 /* NSString+Marshmallow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Marshmallow.m"; sourceTree = "<group>"; };
 		C7CFBDF718C0586B00598F45 /* MarshmallowCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarshmallowCore.h; sourceTree = "<group>"; };
-		C7CFBDF918C0586B00598F45 /* MMDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDebug.h; sourceTree = "<group>"; };
-		C7CFBDFA18C0586B00598F45 /* MMDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDebug.m; sourceTree = "<group>"; };
 		C7CFBDFB18C0586B00598F45 /* MMInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMInit.h; sourceTree = "<group>"; };
 		C7CFBDFC18C0586B00598F45 /* MMInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMInit.m; sourceTree = "<group>"; };
 		C7CFBDFD18C0586B00598F45 /* MMPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPreferences.h; sourceTree = "<group>"; };
@@ -139,6 +138,8 @@
 		C7C83DA918BFE79E0033BC97 = {
 			isa = PBXGroup;
 			children = (
+				C7A8098019ED7D2700EA9876 /* MMLogger.h */,
+				C7A8098119ED7D2700EA9876 /* MMLogger.m */,
 				C7C83DB718BFE79E0033BC97 /* MarshmallowCore */,
 				C7C83DCB18BFE79E0033BC97 /* MarshmallowCoreTests */,
 				C7C83DB418BFE79E0033BC97 /* Frameworks */,
@@ -174,8 +175,6 @@
 				C741304B19117C180028DD16 /* MMAdapter.m */,
 				C7413046191127840028DD16 /* MMAttribute.h */,
 				C7413047191127840028DD16 /* MMAttribute.m */,
-				C7CFBDF918C0586B00598F45 /* MMDebug.h */,
-				C7CFBDFA18C0586B00598F45 /* MMDebug.m */,
 				C7CFBDFB18C0586B00598F45 /* MMInit.h */,
 				C7CFBDFC18C0586B00598F45 /* MMInit.m */,
 				C7CFBDFD18C0586B00598F45 /* MMPreferences.h */,
@@ -319,13 +318,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7CFBE0B18C0586B00598F45 /* MMSet.m in Sources */,
-				C7CFBE0518C0586B00598F45 /* MMDebug.m in Sources */,
 				C741304C19117C180028DD16 /* MMAdapter.m in Sources */,
 				C7A3463A1967BD8B00EC08BB /* MMVersionString.m in Sources */,
 				C7CFBE0D18C0586B00598F45 /* MMUtility.m in Sources */,
 				C7CFBE0918C0586B00598F45 /* MMPreferences.m in Sources */,
 				C7B3C5C818D6B10900B99849 /* NSURL+Marshmallow.m in Sources */,
 				C7412F7B190ED7A60028DD16 /* MMCoreData.m in Sources */,
+				C7A8098219ED7D2700EA9876 /* MMLogger.m in Sources */,
 				C7413048191127840028DD16 /* MMAttribute.m in Sources */,
 				C7CFBE0718C0586B00598F45 /* MMInit.m in Sources */,
 				C7CFBDF418C0585300598F45 /* NSString+Marshmallow.m in Sources */,
@@ -339,7 +338,6 @@
 			files = (
 				C7CFBE0C18C0586B00598F45 /* MMSet.m in Sources */,
 				C7A346371967B8AA00EC08BB /* MMVersionStringTests.m in Sources */,
-				C7CFBE0618C0586B00598F45 /* MMDebug.m in Sources */,
 				C7FC30B618F76E8800A6E700 /* MMSetTests.m in Sources */,
 				C7CFBE0E18C0586B00598F45 /* MMUtility.m in Sources */,
 				C7412F7C190ED7A60028DD16 /* MMCoreData.m in Sources */,
