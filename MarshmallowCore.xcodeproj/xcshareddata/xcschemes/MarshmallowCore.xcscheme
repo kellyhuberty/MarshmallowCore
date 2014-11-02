@@ -49,6 +49,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C7C83DB118BFE79E0033BC97"
+            BuildableName = "libMarshmallowCore.a"
+            BlueprintName = "MarshmallowCore"
+            ReferencedContainer = "container:MarshmallowCore.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
